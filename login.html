@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Login eRuang</title>
+</head>
+<body>
+    
+    <div class="login-box">
+        <img src="assets/img/loginpeople.png" class="avatar">
+        <h1>Login</h1>
+        <form>
+            <input type="text" name="Username" id="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="submit" value="Login" onclick="return login()">
+            <br>
+            <!-- register user untuk mendaftar -->
+            <a class="a" href="register.html">Register User</a>
+        </form>
+    </div>
+</body>
+<script>
+    // login untuk masuk ke website admin
+    function login(){
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+
+        if(username == "" || password == ""){
+            alert("Username / password Tidak boleh kosong")
+            return false;
+        }
+        else if(password.length <7){
+            alert("Password kurang dari 7");
+            return false;
+        }
+        else if(username == "Admin" && password == "1234567"){
+            window.location = "backend/Daftar.html"
+            return false;
+        }
+        else if(username == "Peminjam" && password == "0123456"){
+            window.location = "backend/ruangan.html"
+            return false;    
+        }else{
+            alert("username dan password salah");
+        }
+    }
+</script>
+</html>

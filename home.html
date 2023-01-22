@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/project.css">
+     <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="icon/fontawesome-baru/css/all.min.css">
+  <link rel="stylesheet" href="icon/fontawesome-free/css/all.min.css">
+    <title>Home</title>
+</head>
+<body style="background-color: #fff;">
+  <div class="card" style="border: none;">
+    <img src="assets/img/nf1.png" class="card-img-bottom" height="200px" alt="...">
+  </div>
+  &nbsp;&nbsp;&nbsp;
+  <nav class="navbar" style="background-color: #fff;">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img src="assets/img/logo_nf.png" width="45px" height="45px" alt="">
+    </a>
+    <!-- Navbar content -->
+    <ul class="nav col-12 col-md-auto mb-2" >
+    <li><a href="index.html" class="nav-link px-2 link-secondary text-dark" style="font-weight: bold;" >Eruang</a></li>
+    <li><a href="home.html" class="nav-link px-2 link-dark text-dark" style="font-weight: bold;">Home</a></li>
+    <li><a href="fasilitas.html" class="nav-link px-2 link-dark text-dark" style="font-weight: bold;">Fasilitas</a></li>
+    <li><a href="booking.html" class="nav-link px-2 link-dark text-dark" style="font-weight: bold;">Booking</a></li>
+    <li><a href="berita.html" class="nav-link px-2 link-dark text-dark" style="font-weight: bold;">Berita</a></li>
+    <li><a href="team.html" class="nav-link px-2 link-dark text-dark" style="font-weight: bold;">Tentang kami</a></li>
+  </ul>
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
+    &nbsp;&nbsp;
+    <button class="btn btn-outline-primary" type="submit" id="masuk" style="color: black;"  onclick="return cari()">Search</button>
+    &nbsp;&nbsp;
+    <button type="button" class="btn btn-outline-2" style=" background-image: linear-gradient( -45deg,#00337C,white);" onclick="return login()">Login</button>
+  </form>
+  </nav>
+  &nbsp;&nbsp;&nbsp;
+    <div class="row m-2">
+    <div class="col-md-9 text-dark border" style="background-color: #C4DDFF; border-radius: 10px;">
+        <div class="h-100 p-5 bg-dark-border rounded-3">
+            <a class="nav-link" href="#" style="text-align: end;">Home</a>
+          <h5 style="font-weight: bold;">Tentang eRuang</h5>
+          &nbsp;
+          <p>eRuang merupakan web yang dapat memudahkan anda untuk melakukan aktifitas penting anda,dimana anda dapat melakukan booking ruangan yang sesua dengan kebutuhan anda atau pun perusahaan anda,dimana kami selalu berusaha untuk memberikan rekomendasi ruangan terbaik agar anda dapat melakukan aktifitas anda dengan nyaman,dan kami juga menyediakan keamanan yang tentunya akan selalu berjaga selama acara anda dimulai,karena kami akan selalu mengutamakan kenyamanan dan keamanan dari pelanggan kami. <br> Dengan website kami anda tidak perlu jauh-jauh untuk melakukan booking ruangan,karena kami akan selalu berusaha memberikan kemudahaan dalam pemesanan sesuai kebutuhan anda,dan tentunya penerapan pemesanan ruangan pada website kami sudah terjamin kemanan nya.</p>
+          &nbsp;
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <h5 style="font-weight: bold;">Fasilitas Terbaru</h5>
+                <div class="col-md-5">
+                  <img src="assets/img/fasilitasicon.png" width="100px" height="100px" alt="">
+              </div>
+              <div class="col-md-5">
+                <p>Fasilitas baru dan nyaman</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <h5 style="font-weight: bold;">Cara Pesan Ruangan</h5>
+                <div class="col-md-5">
+                  <img src="assets/img/listicon.png" width="100px" height="100px" alt="">
+              </div>
+              <div class="col-md-5">
+               <p>Pemesanan yang mudah dan cepat</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <h5 style="font-weight: bold;">Pembayaran yang nyaman</h5>
+                <div class="col-md-5">
+                  <img src="assets/img/billicon.png" width="100px" height="100px" alt="">
+              </div>
+              <div class="col-md-5">
+                <p>Pembayaran 100% terpercaya</p>
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="h-100 p-5 border text-dark rounded-3" style="background-color: #fff;">
+          <h6>Kategori Ruangan <i class="fa-regular fa-clipboard"></i></h6>
+            &nbsp;
+            <a class="nav-link" href="fasilitas1.html" style="font-style: italic;">Aula</a>
+            &nbsp;
+            <a class="nav-link" href="ruangrapat.html" style="font-style: italic;">Ruang Rapat</a>
+            &nbsp;
+            <a class="nav-link" href="ruangseminar.html" style="font-style: italic;">Ruang Seminar</a>
+            &nbsp;
+            <a class="nav-link" href="ruanglab.html" style="font-style: italic;">Lab Komputer</a>
+      </div>
+    </div>
+</div>
+<main>
+&nbsp;&nbsp;
+
+<div class="col-md-9 m-2" style="background-color: #C4DDFF; border-radius: 10px;">
+  <div class="h-100 p-5 bg-dark-border rounded-3 text-dark">
+    <h3 style="text-align: center; font-weight: bold; ">Rekomendasi Ruangan</h3>
+    &nbsp;
+    <div class="album py-5 ">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-light">
+          <div class="col">
+            <h6 class="head" >Meeting Room Garuda</h6>
+            <div class="card shadow-sm">
+              <img src="assets/img/Garuda-Room.jpg" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="Icons">
+                    <i class="fa-solid fa-user"><a style="font-size:x-small;"> 8</a></i>
+                  </div>
+                  <small class="text-muted">Rp.250k/Jam</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h6 class="head">Conference Room Nuri</h6>
+            <div class="card shadow-sm">
+              <img src="assets/img/room nuri.JPEG" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="Icons">
+                    <i class="fa-solid fa-user"><a style="font-size:x-small;"> 21</a></i>
+                  </div>
+                  <small class="text-muted">Rp.500k/Jam</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h6 class="head"  >Aula Cendrawasih</h6>
+            <div class="card shadow-sm">
+              <img src="assets/img/cendrawasih1....jpeg" alt="">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="Icons">
+                    <i class="fa-solid fa-user"><a style="font-size:x-small;"> 14</a></i>
+                  </div>
+                  <small class="text-muted">Rp.1.000k/Jam</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+</main>
+&nbsp;&nbsp;&nbsp;
+<div class="row">
+  <div class="col-12 text-center bg-primary pt-3 text-white">
+    <p>Develop By Mahasiswa STT-NF @2022</p>
+  </div>
+</body>
+<script>
+  // untuk pencarian
+  function cari(){
+        search = document.getElementById("search").value;
+  
+        if(search == ""){
+            alert("silahkan masukkan pilihan anda")
+            return false;
+        }
+        else if(search == "Aula"){
+            window.location = "fasilitas1.html"
+            return false;
+          }
+        else if(search == "Ruang Rapat"){
+            window.location = "ruangrapat.html"
+            return false;
+          }
+        else if(search == "Ruang Lab"){
+            window.location = "ruanglab.html"
+            return false;
+          }
+        else if(search == "Ruang Seminar"){
+            window.location = "ruangseminar.html"
+            return false;
+        }else{
+            alert("mungkin yang anda cari Aula/Ruang Rapat?");
+        }
+    }
+  // untuk login
+  function login(){
+      masuk = document.getElementById("masuk").value;
+
+      if(masuk == ""){
+          window.location = "login.html"
+          return false;
+        }
+  }
+</script>
+</html>
